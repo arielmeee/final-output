@@ -1,0 +1,86 @@
+<div class="container" style="width: 60%;">
+
+    <div class="row mt-5">
+
+        <div class="col-lg-3"></div>
+
+        <div class="col-lg-6 p-0">
+
+            {{> messages}}
+
+            <form class="form-group p-0 rounded-lg" method="POST" action="/authenticate">
+                <p class="text-center text-white px-3 py-2"><b>Log In</b></p>
+
+                <!-- <div class="form-group row px-3">
+
+                    <label class="col-sm-2 col-form-label">Username</label>
+
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+                    <div class="col-sm-10">
+                        <input type="text" name="username" class="form-control">
+                    </div>
+                </div> -->
+                <!-- START LINE -->
+                <div class="form-group row px-3">
+
+                    <div class="input-group col-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <input type="text" name="username" placeholder="Username" class="form-control">
+                    </div>
+
+                </div>
+                <!-- END LINE -->
+                <!-- <div class="form-group row px-3">
+                    <label class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" name="password" class="form-control" id="inputPassword">
+
+                        <br>
+                        <button class="btn btn-primary">Log In</button>
+                    </div>
+                </div> -->
+                <!-- START LINE -->
+                <div class="form-group row px-3">
+
+                    <div class="input-group col-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-lock" style="width:16px;" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <input type="password" name="password" placeholder="Password" class="form-control"
+                            id="inputPassword">
+
+                    </div>
+
+                </div>
+                <!-- <div class="container text-center">
+                    <button class="btn btn-primary">Log In</button>
+                </div> -->
+                <div class="container" style="margin-bottom: 16px;">
+                    <div class="row">
+                        <div class="col text-center">
+                            <button class="btn border text-white">Log In</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END LINE -->
+
+            </form>
+
+            <a href="/sign-up">
+                <p class="text-white text-center">Sign Up Here</p>
+            </a>
+
+        </div>
+
+        <div class="col-lg-3"></div>
+
+    </div>
+
+</div>
